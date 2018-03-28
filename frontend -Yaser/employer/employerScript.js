@@ -1,4 +1,4 @@
-var API_HOME = "http://cloudcomputing-2018-a4.azurewebsites.net/employer/";
+var API_HOME = "https://cloudcomputing-2018-a4.azurewebsites.net/employer/";
 // API_HOME = "http://localhost:5000/employer/";
 function showform(employee) {
   $('#brokerFormPage').css("display", "flex");

@@ -1,4 +1,4 @@
-var API_HOME = "http://cloudcomputing-2018-a4.azurewebsites.net/broker/";
+var API_HOME = "https://cloudcomputing-2018-a4.azurewebsites.net/broker/";
 // API_HOME = "http://localhost:5000/broker/";
 $(document).ready(function () {
   $('#alert').hide();
