@@ -16,9 +16,9 @@ namespace MBR.Models
 
 
 		//New for the project
-		public DbSet<MunicipalProperty> municipalProperties;
-		public DbSet<InsuranceProperty> insuranceProperties;
-		public DbSet<RealEstate> realEstates;
+		public DbSet<MunicipalProperty> municipalProperties { get; set; }
+		public DbSet<InsuranceProperty> insuranceProperties{ get; set; }
+		public DbSet<RealEstate> realEstates{ get; set; }
         
 
     }

@@ -11,9 +11,10 @@ using System;
 namespace MBR.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class EmployeeContextModelSnapshot : ModelSnapshot
+    [Migration("20180402231738_M13")]
+    partial class M13
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -127,7 +128,7 @@ namespace MBR.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("municipalProperties");
+                    b.ToTable("municipalPropertiesf");
                 });
 
             modelBuilder.Entity("MBR.Models.RealEstate", b =>

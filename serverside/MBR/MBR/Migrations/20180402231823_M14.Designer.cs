@@ -11,9 +11,10 @@ using System;
 namespace MBR.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class EmployeeContextModelSnapshot : ModelSnapshot
+    [Migration("20180402231823_M14")]
+    partial class M14
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
