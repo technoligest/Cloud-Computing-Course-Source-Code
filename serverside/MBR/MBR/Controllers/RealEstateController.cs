@@ -21,6 +21,7 @@ namespace MBR.Controllers
         }
 		[HttpPut("applyforappraisal")]
 		public IActionResult applyForAppraisal([FromBody] RealEstate r){
+			dynamic result;
 			if(r==null){
 				result = new JObject();
                 result.error = "Could not add real estate application.";
@@ -28,6 +29,7 @@ namespace MBR.Controllers
 			}
 			context_.realEstates.Add(r);
 			context_.SaveChanges();
+			return new ObjectResult("success");
 		}
     }
 }

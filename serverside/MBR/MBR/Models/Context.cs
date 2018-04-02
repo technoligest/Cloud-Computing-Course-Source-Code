@@ -20,7 +20,6 @@ namespace MBR.Models
 		public DbSet<InsuranceProperty> insuranceProperties;
 		public DbSet<RealEstate> realEstates;
         
-        
 
     }
 }
