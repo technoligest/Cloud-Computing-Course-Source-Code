@@ -1,4 +1,4 @@
-var API_HOME = "https://cloudcomputing-2018-a4.azurewebsites.net/insurance/";
+var API_HOME = "http://groupprojectmbr.azurewebsites.net/insurance/";
 function showform(customer) {
   console.log(customer)
   $('#brokerFormPage').css("display", "flex");
