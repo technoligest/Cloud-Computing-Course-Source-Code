@@ -53,5 +53,6 @@
     <Compile Remove="Models\InsuranceContext.cs" />
     <Compile Remove="Models\EmployeeUrl.cs" />
     <Compile Remove="Models\InsuranceCustomer.cs" />
+    <Compile Remove="Models\InsuranceCallbackURL.cs" />
   </ItemGroup>
 </Project>

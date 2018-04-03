@@ -29,7 +29,16 @@ namespace MBR.Controllers
 			}
 			context_.realEstates.Add(r);
 			context_.SaveChanges();
-			return new ObjectResult("success");
+
+            //HttpResponse<String> jsonResponse = Unirest.post("https://prod-22.canadaeast.logic.azure.com:443/workflows/6663b6167d0f44b782fb91167859c27b/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Le5JWoPAlnfsOO_7Ub3wE2iL3XJb2gDg4ExElRfJ6qo")
+                  //.header("accept", "application/json")
+                  //.field("id", e.ID)
+                  //.asJson<String>();
+            return new ObjectResult("{\"success\":\"The appraisal application was added.\"}");
+
 		}
+
     }
+
 }
+
