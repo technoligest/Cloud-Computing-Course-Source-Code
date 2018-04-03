@@ -1,4 +1,4 @@
-var API_HOME = "http://groupprojectmbr.azurewebsites.net/broker/";
+var API_HOME = "http://groupprojectmbr.azurewebsites.netadd/broker/";
 // API_HOME = "http://localhost:5000/broker/";
 $(document).ready(function () {
   $('#alert').hide();
