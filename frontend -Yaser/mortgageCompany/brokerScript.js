@@ -34,7 +34,7 @@ $('#mortgageForm').submit(function (e) {
         dangerAlert("Could not submit mortgage form.")
       } else {
         console.log(res)
-        successAlert("Your application has been submitted. Your mortgage id is: " + res['id']+ ". We sill need information from your employer and insurance company. Please get them to forward them over.");
+        successAlert("Your application has been submitted. Your mortgage id is: " + res['id']+ ". We still need information from your employer and insurance company. Please get them to forward them over.");
       }
     } else if (xttp.readyState == XMLHttpRequest.UNSENT) {
       dangerAlert("Could not delete image for some reason.")
@@ -133,4 +133,3 @@ function dangerAlert(message) {
   $('#alertMessage').html(message);
   $('#alert').show();
 }
-
