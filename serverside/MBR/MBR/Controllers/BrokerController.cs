@@ -41,8 +41,8 @@ namespace MBR.Controllers
             {
                 Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
             }
-
-            HttpResponse<String> jsonResponse = Unirest.post("https://prod-14.northcentralus.logic.azure.com:443/workflows/487a72c02b9f4c92a35d5ce05dd967ef/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Ws0gqdyRge-9dgque88ezpkAKZPab-DDC4yQdadaIgk")
+            var callString = "https://prod-14.northcentralus.logic.azure.com:443/workflows/487a72c02b9f4c92a35d5ce05dd967ef/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Ws0gqdyRge-9dgque88ezpkAKZPab-DDC4yQdadaIgk";
+            HttpResponse<String> jsonResponse = Unirest.post(callString)
                   .header("accept", "application/json")
                   .field("id", e.ID)
                   .asJson<String>();
