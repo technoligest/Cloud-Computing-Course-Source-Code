@@ -17,7 +17,10 @@ namespace MBR.Controllers
         {
             context_ = context;
         }
-
+        [HttpGet("what")]
+        public IActionResult what(){
+            return new ObjectResult("What!");
+        }
         [HttpPut("addEmployee")]
         public IActionResult addEmployee([FromBody] Employee e)
         {
