@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Hero Form</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <div class="form-row align-items-center">
+          <div class="col-sm-6">
+            <label class="sr-only" for="name">Employee ID</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="id" #name="ngModel">
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+              Your id is required
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Sign in</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

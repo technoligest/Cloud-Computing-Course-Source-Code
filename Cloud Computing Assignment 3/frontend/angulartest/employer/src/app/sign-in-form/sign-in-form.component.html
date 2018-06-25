@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form (ngSubmit)="onSubmit()" #userForm="ngForm" novalidate>
+        <div class="form-row">
+          <div class="col-md-6">
+            <label class="sr-only" for="name">Employee ID</label>
+            <input type="text"
+                   class="form-control"
+                   id="ids"
+                   required
+                   name="ids"
+                   placeholder="Employee ID"
+                   [(ngModel)]="model.id"
+                   #ids="ngModel"
+                   minlength="5"
+                   maxlength="5">
+            <div [hidden]="ids.valid || ids.pristine" class="alert alert-danger">
+              Your id is required
+            </div>
+          </div>
+          <div class="col-md-6">
+            <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">Sign in</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
