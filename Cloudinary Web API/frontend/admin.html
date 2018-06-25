@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cloudinary Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Alerts are prettyyyyyy -->
+  <div class="alert alert-primary alert-dismissible fade show  " role="alert" id="alert">
+    <div id="alertMessage"> </div>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary   justify-content-between">
+    <a class="navbar-brand" href="index.html">Students.io</a>
+
+    <form class="form-inline">
+      <a href="admin.html">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="button">Admin Panel</button>
+      </a>
+    </form>
+  </nav>
+  <div style="height:80px;"></div>
+  <div class="container border border-success" style="padding:40px;">
+    <div class="col-md-12">
+
+      <form id="newStudent">
+        <div class="input-group mb-3">
+          <h2 class="text-success">Create New Student</h2>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Student Nickname</span>
+          </div>
+          <input type="text" class="form-control" id="newNickname" placeholder="Enter name here">
+        </div>
+        <div class="input-group mb-3">
+
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Student ID</span>
+          </div>
+          <input type="text" class="form-control" id="newID" placeholder="Enter student B00 here">
+        </div>
+        <button type="submit" class="btn btn-success">Add Student</button>
+      </form>
+    </div>
+  </div>
+  <br/>
+  <div class="container border border-warning" style="padding:40px">
+    <div class="col-md-12">
+      <form id="uploadPicWithURLForm">
+        <div class="form-group">
+          <div class="input-group mb-3">
+            <h2 class="text-warning">Upload image from URL</h2>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">URL</span>
+            </div>
+            <input type="text" class="form-control" id="uploadPicWithURL" placeholder="Enter image URL here">
+          </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Student ID</span>
+            </div>
+            <input type="text" class="form-control" id="pictureURLInputStudentId" placeholder="Enter student ID here">
+  
+          </div>
+        <button type="submit" class="btn btn-warning">Upload Image</button>
+      </form>
+    </div>
+  </div>
+  <br/>
+  <div class="container border border-primary" style="padding:40px">
+    <div class="col-md-12">
+      <form id="addPicture">
+        <div class="input-group mb-3">
+          <div class="input-group mb-3">
+            <h2 class="text-primary">Upload image locally</h2>
+          </div>
+          <div class="input-group-prepend">
+            <span class="input-group-text">Student's picture</span>
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="pictureInput">
+            <label class="custom-file-label" for="pictureInput">Choose file</label>
+
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Student ID</span>
+          </div>
+          <input type="text" class="form-control" id="pictureInputStudentId" placeholder="Enter student ID here">
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add picture for student</button>
+      </form>
+    </div>
+  </div>
+  <br/>
+  <div class="container border border-danger" style="padding:40px">
+    <div class="col-md-12">
+      <form id="deleteStudentForm">
+        <div class="form-group">
+          <div class="input-group mb-3">
+            <h2 class="text-danger">Delete student</h2>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Student ID</span>
+            </div>
+            <input type="text" class="form-control" id="deleteID" placeholder="Enter student B00 Here">
+
+          </div>
+          <small id="emailHelp" class="form-text text-muted">Careful! This will delete the student and all their pictures.</small>
+        </div>
+
+        <button type="submit" class="btn btn-danger">Delete Student</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+
+
+<!-- BootStrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+<script src="script.js" type="text/javascript"></script>
+
+</html>
